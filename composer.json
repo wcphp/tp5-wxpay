@@ -1,0 +1,12 @@
+{
+    "name": "wxphp/tp5-wxpay",
+    "description": "基于tp5.1的微信支付api",
+    "type": "library",
+    "authors": [
+        {
+            "name": "weika",
+            "email": "weika@wcphp.com"
+        }
+    ],
+    "require": {}
+}
