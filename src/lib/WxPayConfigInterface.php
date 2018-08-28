@@ -3,6 +3,8 @@
 * 	配置账号信息
 */
 
+namespace WxPay\lib;
+
 abstract class WxPayConfigInterface
 {
 	//=======【基本信息设置】=====================================

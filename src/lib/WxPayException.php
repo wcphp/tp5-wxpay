@@ -5,6 +5,8 @@
  * @author widyhu
  *
  */
+namespace WxPay\lib;
+
 class WxPayException extends Exception {
 	public function errorMessage()
 	{

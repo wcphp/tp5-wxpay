@@ -9,7 +9,7 @@
         }
     ],
 	"autoload": {
-        "psr-4": {"wxpay\\": "src/lib"}
+        "psr-4": {"WxPay\\": "src"}
     },
     "require": {}
 }
