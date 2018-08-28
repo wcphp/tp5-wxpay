@@ -1,5 +1,5 @@
 {
-    "name": "wxphp/tp5-wxpay",
+    "name": "wcphp/tp5-wxpay",
     "description": "基于tp5.1的微信支付api",
     "type": "library",
     "authors": [
@@ -8,5 +8,8 @@
             "email": "weika@wcphp.com"
         }
     ],
+	"autoload": {
+        "psr-4": {"wxpay\\": "src/lib"}
+    },
     "require": {}
 }
