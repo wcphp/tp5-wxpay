@@ -5,7 +5,7 @@
 // | Author: wk <weika@wcphp.com>
 // +----------------------------------------------------------------------
 
-namespace wxpay;
+namespace WxPay;
 
 class WxPayNotify extends WxPayNotifyReply
 {
@@ -17,7 +17,7 @@ class WxPayNotify extends WxPayNotifyReply
 	 */
 	final public function Handle($config, $needSign = true)
 	{
-		$this->config = $config;
+		$this->config  = new WxPayConfig($config);
 		$msg = "OK";
 		//当返回false的时候，表示notify中调用NotifyCallBack回调失败获取签名校验失败，此时直接回复失败
 		$result = WxpayApi::notify($config, array($this, 'NotifyCallBack'), $msg);
