@@ -1,6 +1,6 @@
 {
-    "name": "wcphp/tp5-wxpay",
-    "description": "基于tp5.1的微信支付api",
+    "name": "wcphp/tp5-wxpay-sdk",
+    "description": "基于微信sdk_v3.0.9",
     "type": "library",
     "authors": [
         {
