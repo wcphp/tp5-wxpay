@@ -7,13 +7,13 @@ use WxPay\lib\WxPayConfigInterface;
 class WxPayConfig extends WxPayConfigInterface
 {
     protected $config = [
-        'appId'=>'',
-        'merchantId'=>'',
-        'notifyUrl'=>'',
+        'app_id'=>'',
+        'merchant_id'=>'',
+        'notify_url'=>'',
         'key'=>'',
-        'appSecret'=>'',
-        'sslCertPath'=>'',
-        'sslKeyPath'=>'',
+        'app_secret'=>'',
+        'ssl_cert_path'=>'',
+        'ssl_key_path'=>'',
     ];
     public function __construct($config='')
     {
@@ -35,11 +35,11 @@ class WxPayConfig extends WxPayConfigInterface
 	 */
 	public function GetAppId()
 	{
-		return $this->config['appId'];
+		return $this->config['app_id'];
 	}
 	public function GetMerchantId()
 	{
-		return $this->config['merchantId'];
+		return $this->config['merchant_id'];
 	}
 	
 	//=======【支付相关配置：支付成功回调地址/签名方式】===================================
@@ -49,7 +49,7 @@ class WxPayConfig extends WxPayConfigInterface
 	**/
 	public function GetNotifyUrl()
 	{
-		return $this->config['notifyUrl'];;
+		return $this->config['notify_url'];;
 	}
 	public function GetSignType()
 	{
@@ -99,7 +99,7 @@ class WxPayConfig extends WxPayConfigInterface
 	}
 	public function GetAppSecret()
 	{
-		return $this->config['appSecret'];;
+		return $this->config['app_secret'];;
 	}
 
 
@@ -116,7 +116,7 @@ class WxPayConfig extends WxPayConfigInterface
 	 */
 	public function GetSSLCertPath(&$sslCertPath, &$sslKeyPath)
 	{
-		$sslCertPath = $this->config['sslCertPath'];
-		$sslKeyPath = $this->config['sslKeyPath'];
+		$sslCertPath = $this->config['ssl_cert_path'];
+		$sslKeyPath = $this->config['ssl_key_path'];
 	}
 }
